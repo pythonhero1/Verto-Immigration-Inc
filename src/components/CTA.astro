@@ -1,0 +1,5 @@
+---
+import Icon from './Icon.astro';
+const {title='Your next chapter deserves a clear first step.',text='Tell us where you want to go. We’ll start with where you are.'}=Astro.props;
+---
+<section class="cta-section"><div class="container cta-inner"><div><span class="eyebrow light">LET’S BEGIN</span><h2>{title}</h2><p>{text}</p></div><a href="/register/" class="button cream">Start your registration <Icon/></a></div></section>
