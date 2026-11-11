@@ -1,0 +1,5 @@
+---
+import {faqs} from '../data/site';
+const {limit=faqs.length}=Astro.props;
+---
+<div class="faq-list">{faqs.slice(0,limit).map(([q,a])=><details><summary>{q}<span aria-hidden="true">+</span></summary><p>{a}</p></details>)}</div>

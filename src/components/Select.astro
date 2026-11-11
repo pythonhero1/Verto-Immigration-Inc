@@ -1,0 +1,4 @@
+---
+const {name,label,options,required=true,autocomplete}=Astro.props;
+---
+<div class="field"><label for={name}>{label}</label><select id={name} name={name} required={required} autocomplete={autocomplete}><option value="">Please select</option>{options.map((v:string)=><option value={v}>{v}</option>)}</select></div>

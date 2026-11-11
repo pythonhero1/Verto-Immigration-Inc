@@ -1,0 +1,14 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://js.stripe.com https://*.stripe.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://*.stripe.com; frame-src https://*.stripe.com https://*.link.com https://challenges.cloudflare.com; connect-src 'self' https://*.stripe.com https://*.link.com https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+/register/*
+  Cache-Control: no-store
+/track/*
+  Cache-Control: no-store
+/admin/*
+  Cache-Control: no-store
+  X-Robots-Tag: noindex, nofollow

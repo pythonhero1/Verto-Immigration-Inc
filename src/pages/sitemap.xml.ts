@@ -1,0 +1,3 @@
+import type {APIRoute} from 'astro';
+const routes=['','about/','services/','services/work-permits/','services/visitor-visas/','how-it-works/','fees/','contact/','faq/','resources/','resources/before-you-apply/','resources/verify-your-representative/','resources/documents-and-privacy/','privacy/','terms/','refunds/','accessibility/'];
+export const GET:APIRoute=({site})=>new Response('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+routes.map(path=>`<url><loc>${new URL('/'+path,site)}</loc></url>`).join('')+'</urlset>',{headers:{'Content-Type':'application/xml'}});
